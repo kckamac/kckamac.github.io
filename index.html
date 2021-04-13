@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Website Design Fundamentals</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,22 +23,94 @@
 </head>
 
 <body>
+  <!--This is the site heading section where the logo and page title appears-->
  <header>
-	<h1>Learn How to Make HTML Website</h1>
-	  </header>
+    <table>
+      <tr>
+        <th scope="col"><img src="logo.png" width="75" height="75"></th>
+      	<th>
+          <h1>Learn How to Make HTML Website</h1>
+          <h3>Website design made easy</h3>
+        </th>
+        
+      </tr>
+    </table>  
+    <hr>
+ </header>
 	  
-	  <section style="width: 65%; float: left; height: 500px;">
+    <!--This is the site navigation section-->
+  <nav>
+    <table cellpadding="10">
+      <tr>
+        <th><div><a href="#">Home</a></div></th>
+        <th><div><a href="#">About us</a></div></th>
+        <th><div><a href="#">Courses</a></div></th>
+        <th><div><a href="#">Contact us</a></div></th>
+      </tr>
+    </table>
+    <hr>
+  </nav>  
+	
+  <!--Main website content. Here we use table to create a two column website with contents on each side. We then add supposed post events in the secont section-->
 
-	     <article>
-          <p>Learning begins with you. Start learning today!</p>
-	     </article>
+  <section>
+    <table cellpadding="10">
+      <tr>
+        <td>
+          <h2>Create HTML Website</h2>
+          <p>
+            Every web designer should have the knowledge of how to make HTML website. This is the starting point of web designing course, especially, for those new in website designing.
+            In today's world of web designing, you can make great websites without understanding what is Html or coding. This is because we have platforms that make things easy.
+            <br>
+            To become a professional web designer requires the knowledge of HTML, CSS and JavaScript. 
+            Though codeless platforms can help you make a website easily and speedily, adding codes can make a difference. To add code to your design, the knowledge of HTML, CSS, and JS is invaluable.
+          </p>
+          <p>
+            Today, we are going to take you through the journey of how to make HTML websites.
+            At the end, you should be able to make HTML website and host it. Basically, this is the sketch of the webpage you will make using html at the end of this post.
 
-	  </section>
-	  
-      <aside style="width: 30%; float: right; background-color: #f1f1f1;">
-	     <p>This is aside, we'll set it at 30%</p>
-      </aside>
+          </p>
+        </td>
+           
+        <td>
+          <h3>What is HTML?</h3>
+           <p>
+             HTML is an acronym for the term Hyper Text Mark-up Language. It is a language used to define the structure of a webpage. This simple language is represented with tags, also called elements.</p>
+              <p>The language begins with an opening tag and close with a closing tag as shown below.</p>
+              <h1>This is a heading</h1>
+              <p>Within the opening and closing tags is a page content that will be rendered in a browser.
+              HTML uses hypertext to link out to other web pages within and outside the same domain. When a link is within the same domain, it is called internal link.
 
+           </p>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+<!--This section mimics the recent post section as seen in blog posts.-->
+  <section>
+    <h2>Recent Posts</h2>
+    <table cellpadding="15">
+      <tr>
+        <td>
+          <h3><a href="#">EtherCal: The Ultimate Free Spreadsheet</a></h3>
+          <img src="EtherCalc 1.png" width="300" height="250">
+          <p>EtherCalc is a great spreadsheet for anyone seeking to do analysis. It is free and can help you connect with others</p>
+        </td>
+        <td>
+          <h3><a href="#">Google Sheets' an Awesome Spreadsheet App</a></h3>
+          <img src="Google sheets.png" width="300" height="250">
+          <p>Google sheet is an awesome spreadsheet for anyone seeking to do analysis. It is free and can help you collaborate with others</p>
+        </td>
+        <td>
+          <h3><a href=#>Zoho Sheet is the Most Excellent Free Spreadsheet</a></h3>
+          <img src="Sales analysis - zoho.png" width="250" height="300">
+          <p>Zoho sheet is an excellent spreadsheet for anyone seeking to do analysis. It is free and can help you connect with your colleagues</p>
+        </td>
+      </tr>
+    </table>
+  </section>
+  <hr><hr>
 
 	  
    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
@@ -51,10 +123,10 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
-<footer style="clear: both;">
+<footer>
    <p>Copyright@2021. <a href=https://www.kmacims.com.ng>KmacIMS | Education Annex</a></p>
 </footer>
-
+<hr>
 </body>
 
 </html>
